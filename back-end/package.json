@@ -1,0 +1,51 @@
+{
+  "name": "activity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
+    "table-employee": "ts-node-dev src/tables/employee.ts",
+    "table-company": "ts-node-dev src/tables/company.ts",
+    "table-employer": "ts-node-dev src/tables/employer.ts",
+    "table-account": "ts-node-dev src/tables/account.ts",
+    "table-admin": "ts-node-dev src/tables/admin.ts",
+    "table-leave": "ts-node-dev src/tables/leave.ts",
+    "table-overtime": "ts-node-dev src/tables/overtime.ts",
+    "table-absence": "ts-node-dev src/tables/absence.ts",
+    "test-table-employee": "ts-node-dev src/test-tables/table-employee.ts",
+    "test-table-company": "ts-node-dev src/test-tables/table-company.ts",
+    "test-table-employer": "ts-node-dev src/test-tables/table-employer.ts",
+    "test-table-account": "ts-node-dev src/test-tables/table-account.ts",
+    "test-table-admin": "ts-node-dev src/test-tables/table-admin.ts",
+    "test-table-leave": "ts-node-dev src/test-tables/table-leave.ts",
+    "test-table-overtime": "ts-node-dev src/test-tables/table-overtime.ts",
+    "test-table-absence": "ts-node-dev src/test-tables/table-absence.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.1.2",
+    "@types/node": "^18.8.2",
+    "jest": "^29.1.2",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.186.0",
+    "@aws-sdk/lib-dynamodb": "^3.186.0",
+    "@types/date-fns": "^2.6.0",
+    "@types/lodash": "^4.14.186",
+    "@types/uuid": "^8.3.4",
+    "crypto-js": "^4.1.1",
+    "date-fns": "^2.29.3",
+    "dotenv": "^16.0.3",
+    "dynamo-converters": "^6.1.8",
+    "jose": "^4.10.0",
+    "lodash": "^4.17.21",
+    "uuid": "^9.0.0"
+  }
+}
